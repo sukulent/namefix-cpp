@@ -1,4 +1,4 @@
-# Namefix
+# Namefix-cpp
 Fix bad filenames - tries to rename files so all characters are ASCII, replaces
 spaces with an underscore and periods with a hyphen, replaces all other
 non-ASCII characters with an underscore and keeps number of extensions
@@ -66,13 +66,13 @@ So m.a.n.y d.o.t.s.thing -> So_m-a-n-y_d.o.t.s.thing
 
 ### Arch
 
-PKGBUILD is now available in [AUR](https://aur.archlinux.org/packages/namefix)!
+PKGBUILD is now available in [AUR](https://aur.archlinux.org/packages/namefix-cpp)!
 
 Get it manually from AUR or the `aur` branch, build and install using `makepkg -si`
 
 Or use your AUR helper i.e.:
 ```
-yay -S namefix
+yay -S namefix-cpp
 ```
 
 ### Debian and Fedora (deb and rpm)
@@ -96,7 +96,7 @@ You can run `make install` if you want to copy the executable to /usr/local/bin/
 and `make uninstall` runs `rm /usr/local/bin/namefix` if you want to remove it.
 
 ```
-	git clone https://github.com/sukulent/namefix.git && cd namefix
+	git clone https://github.com/sukulent/namefix-cpp.git && cd namefix-cpp
 
 	make
 
@@ -157,13 +157,15 @@ the future. I will try to fix bugs, so feel free to open an issue if you found
 any. The same goes for feature requests, feel free to open an issue and if it
 catches my eye, I might implement it.
 
+Note that this project has been renamed from 'namefix' to 'namefix-cpp'.
+The change was made to distinguish it from 'namefix.pl'.
+Check that project out too! [GitHub](https://github.com/jacob-jarick/namefix) [SourceForge](https://sourceforge.net/projects/namefix)
+
 Using the [args](https://github.com/Taywee/args) library for argument parsing.
 
 
 ### License
 
-This program is lincesed under the GPL-3-or-later license.
+This program is licensed under the GPL-3-or-later license.
 
 
-
-[AUR]: https://aur.archlinux.org/packages/namefix
