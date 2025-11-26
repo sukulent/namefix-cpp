@@ -3,8 +3,8 @@
 # fail whenever
 set -eo pipefail
 
-pkgver="1.3.0"
-pkgname=namefix
+pkgver="1.3.1"
+pkgname=namefix-cpp
 
 echo "Starting $pkgname package gen"
 
@@ -62,7 +62,7 @@ if [[ -f "v$pkgver" ]] ; then
 fi
 
 # prepare checksum
-echo "172ae75d01dc32e1376767b6b942a51d3154ae182f93e770e9c45d4d0a4712c1 $pkgname-$pkgver.tar.gz" > sha.txt
+echo "1c711180e6629e665d4cd8fbfc6ea4f97c3f0225c9bfb80021036cc5fb5cea23 $pkgname-$pkgver.tar.gz" > sha.txt
 
 # check
 if ! sha256sum -c sha.txt 1>/dev/null 2>&1 ; then

@@ -15,7 +15,7 @@ Use `./gen.sh deb` for deb package\
 and `./gen.sh rpm` for rpm package\
 It will download the source archive, compile and generate the package accordingly.
 
-If it fails, you'll need to delete the namefix-build manually before
+If it fails, you'll need to delete the `namefix-build` manually before
 running it again, after you install the missing prerequisites.
 
 Header files are in package:
